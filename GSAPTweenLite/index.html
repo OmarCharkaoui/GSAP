@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn TweenLite </title>
+  <!--   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+  
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1 class="Display-1 text-black w-70 text-center"> TweenLite </h1>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+ 
+  <span class="text-danger h1">TweenLite.to()</span> <button class="btn btn-primary play-1" >play animation</button>
+<div class="tween1">
+</div>
+<span class="h4 ">var tween = document.getElementsByClassName('tween1');<br>
+    TweenLite.to(tween , 2 , {width:100 , height:100 , backgroundColor:"#ff0000" } );</span>
+  </div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h5 text-warning">The target can also be an array of objects.</span> <button class="btn btn-primary play-2" >play animation</button>
+<div class="obj-tween">
+  <div class="tween tween2"></div>
+  <div class="tween tween3"></div>
+  <div class="tween tween4"></div>
+  <span class="h4" >TweenLite.to( ['.tween2','.tween3','.tween4'], 3 , {opacity:0.8 , rotation:360 , x:600 });</span>
+</div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-danger">TweenLite.from()</span><button class="btn btn-primary play-3" >play animation</button>
+<div class="tween twennfrom1"></div>
+<span class="h4">TweenLite.from('.twennfrom1',5,{opacity:0 , rotation:360 , x:700});
+  </span>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-danger">TweenLite.fromTo()</span><button class="btn btn-primary play-4" >play animation</button>
+<div class="tween tweenfromto"></div>
+<span class="h4">TweenLite.fromTo('.tweenfromto' , 3 , {width:600 , opacity:0 },{width:100 , opacity:1,paused:true} );</span>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h3 text-warning">Function-based values </span><button class="btn btn-primary play-5" >play animation</button><span>refresh page and click </span>
+    <div class="tweenx tween20"></div>
+    <div class="tweenx tween30"></div>
+    <div class="tweenx tween40"></div>
+  <span class="h4">TweenLite.to('.tweenx',3,{x: function(){return Math.random() * 400;}});</span><br>
+    
+<!-- ------------------------------------------------------------------------------ -->
+<button class="btn btn-primary play-6" >play animation</button>
+    <div class="tweeny tween20"></div>
+    <div class="tweeny tween30"></div>
+    <div class="tweeny tween40"></div>
+    <span class="h4">TweenLite.to('.tweeny',2,{x:function(index,target) {console.log(index + target);return (index + 1) * 200;</span>
+    </div>
+      <hr class="border border-warning">
+      <!-- <h1  class="display-3 text-danger w-70 text-center">See the Code Source</h1> -->
+<!-- ------------------------------------------------------------------------------ -->
+
+<h1 class="Display-1 text-black w-70 text-center"> TweenLite Method </h1>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.Delay()</span><button class="btn btn-primary play-7" >play animation</button>
+<div class="tween-delay"></div>
+<span class="h4">var animation1 = TweenLite.to('.tween-delay',2,{x:300 , delay:3});<br>
+    console.log(animation1.delay()); // get curent delay 3<br>
+    animation1.delay(0);// set new delay</span>
+  </div>
+    <hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container"><span class="h1 text-warning "> Delay on TweenLite.from() works </span><br><button class="btn btn-primary play-8" >play animation</button>
+<br><span class="h3 text-danger">"immediateRender:true" default</span>
+<div class="tween-from-delay-1"></div>
+<span class="h4">var animation2= TweenLite.from('.tween-from-delay-1',2 ,{x:800 , delay:2,immediateRender:true   });</span>
+<hr>
+<span class="h3 text-danger">"immediateRender:false"</span>
+<div class="tween-from-delay-2"></div>
+<span class="h4">var animation3= TweenLite.from('.tween-from-delay-2',2 ,{x:800 , delay:2, immediateRender:false  });</span>
+</div>
+
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">TweenLite.delayedCall()</span><button class="btn btn-primary play-9" >click and wait 3s</button><br><br>
+<div class="delaycall h4">  </div>
+<br>
+<span class="h4" >animation4 = TweenLite.delayedCall(3,myfunctiontocall,["Omar","24"]); //call the function
+ 'myfunctiontocall' after 'delay' 3s  </span>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.duration()</span><button class="btn btn-primary play-10" >click to animated</button><br><br>
+<span class="h4 durationyes"></span><br><br>
+<span class="h4">You can set duration : duration(number);</span>
+<div class="duration"></div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.eventCallback()</span><button class="btn btn-primary play-11" >click to animated</button>refresh to click again<br><br>
+<span class="h4" >var animation6 = TweenLite.to('.eventCallback',4,{rotation:360 , x:600});</span><br>
+<span class="h4" >animation6.eventCallback("onComplete",callbackfunction);<br></span><br>
+<div class="eventCallback"></div>
+<span class="h4 toto">wait until complete animation </span>
+<hr>
+<span class="h5 text-warning">The same :<span class="text-dark"> TweenLite.to('.eventCallback',2,{rotation:360 , x:600, onComplete:callbackfunction});</span></span>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.invalidate()</span><br><br>
+<span class="h4"> var animation7 = TweenLite.to('.invalidate',3,{x:"+=100" , rotation:"+=360" }); </span><br>
+<span class="h4"> $('.restart').click(function () { 
+    animation7.restart();
+ });</span>
+ <br><br><span class="h4">$('.Invalid').click(function () { <br>
+    animation7.invalidate();<br>
+    animation7.restart();
+});</span>
+
+<div class="invalidate"></div>
+<button  class="btn btn-outline-primary restart">Restart</button>
+<button class="btn btn-outline-primary Invalid">invalidate & Restart</button>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.isActive()</span><br><br>
+
+<div class="isactive"></div>
+<div class="default"></div>
+<button class="btn btn-warning restart-anim">(click + 2time)You can restart only if animation stop it(Green BOX) </button>
+<button class="btn btn-danger restart-default">(click + 2time)You can restart any time if you want(red box) </button>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.kill()</span><br><br>
+<div class="kill"></div>
+<button class="btn btn-outline-danger play-first">Play first</button>
+<button class="btn btn-outline-danger Kill-btn">Click To kill all animation property </button>
+<button class="btn btn-outline-warning Kill-btn-1">Click To kill backgroundColor animation </button>
+<button class="btn btn-outline-secondary Kill-btn-2">Click To kill rotation animation </button>
+<button class="btn btn-outline-secondary Kill-btn-3">Click To kill Translate animation </button>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">TweenLite.killDelayedCallsTo()</span><br><br>
+<p>wait 3s to see text below => refresh to repeat</p>
+<div class="write-here"></div>
+<button class="btn btn-outline-secondary Kill-delay-calls">If you click you dont see the text below never </button>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <span class="h1 text-secondary">.pause(),.restart(),.play(),.progress()</span><br><br>
+  <button class="btn btn-outline-primary play-btn">Play</button>
+  <button class="btn btn-outline-dark restart-btn">Restart</button>
+  <button class="btn btn-outline-danger pause-btn">Pause</button>
+  <button class="btn btn-danger pause-jump-btn">jumps to exactly 2-seconds into the animation and pause </button>
+  <button class="btn btn-warning btn-progress">gets current progress (0 To 1)</button>
+ 
+<div class="pause-1 mt-3"></div>
+<button class="btn btn-success paused-btn">gets current paused() state True/False</button>
+<h3 class="curent-paused"></h3>
+<h3 class="curent-progress"></h3>
+</div>
+
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+<span class="h1 text-secondary">.reverse()</span><br><br>
+<button class="btn btn-danger restart-btnn"> Play/Restart</button>
+<button class="btn btn-primary reverse-btn"> reverse() </button>
+  <div class="reverse-box mt-3"></div>
+  <button class="btn btn-success reversed-btn">gets current reversed() state True/False</button>
+  <h3 class="reserved-result "></h3>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+    <span class="h1 text-secondary">.seek()</span><br><br>
+    <button class="btn btn-danger seek-btnnnn"> restart</button>
+    <button class="btn btn-warning seek-btn"> Jumps to a specific time seek()</button>
+    
+    <div class="box-seek mt-3"></div>
+</div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+    <span class="h1 text-secondary">.resume()</span><br><br>
+    <button class="btn btn-primary resume-btn-play"> play()</button>
+    <button class="btn btn-warning pause-btn-play"> pause()</button>
+<button class="btn btn-danger resume-btn"> resume()</button>
+
+<div class="box-resume mt-3"></div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <span class="h1 text-secondary">TweenLite.set()</span><br><br>
+  <h3 class="h3 mb-1">Immediately sets properties of the target accordingly </h3>
+  <button class="btn btn-primary TweenLite-btn-play"> add translate tx:100 Immediately </button>
+  <div class="set-box mt-3"></div>
+</div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+  <span class="h1 text-secondary">.startTime()</span><br><br>
+  <button class="btn btn-primary startTimeee-btn-play"> play</button>
+  <button class="btn btn-success startTime-btn-play"> gets current start time </button>
+<div class="start-time mt-3"></div>
+<h6 class="text-warning">Not Clear to me yet</h6>
+<h3 class="h3 currentTime"></h3>
+</div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+  <span class="h1 text-secondary">.time()</span><br><br>
+  <h3 class="mb-1" >gets current time which will never be less than 0 or greater than the animation's duration<br>Duration of this animation is 3 </h3>
+  <button class="btn btn-primary time-btn-play"> play</button>
+  <button class="btn btn-success time-current-btn-play"> gets current time </button>
+  <div class="time-box-c mt-3"></div>
+<h4 class="get-time-from"></h4>
+</div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+<span class="h1 text-secondary">.timeScale()</span><br><br>
+<h3>1 = normal speed (the default)<br>0.5 = half speed,<br>2 = double speed</h3>
+<button class="btn btn-primary time-scale-btn-play">Play</button>
+<button class="btn btn-success time--scale1-current-btn-play"> set timeScale(0.5) </button>
+<button class="btn btn-success time--scale2-current-btn-play"> set timeScale(2) </button>
+<button class="btn btn-danger time--scale-current-btn-play"> gets current timeScale </button>
+<div class="time-scale-box mt-3"></div>
+<h2 class="resu"></h2>
+</div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+
+<script src="./jquery/jquery-3.3.1.min.js"></script>
+<script src="./bootsrap/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="my-js.js"></script>
+</body>
+</html>

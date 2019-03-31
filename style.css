@@ -1,0 +1,61 @@
+/* start busmilah */
+
+path{
+
+    stroke: rgb(209, 12, 12);
+    stroke-width: 5px;
+    fill: none;
+    stroke-dasharray: 1295.56;
+    -moz-animation: gonow 4s ease-out forwards ;
+    -webkit-animation: gonow 4s ease-out forwards ;
+    
+            animation: gonow 4s ease-out forwards ;
+}
+#path-1{
+    stroke-dasharray: 1295.56;
+    stroke-dashoffset: 1295.56;
+}
+#path-2{
+  
+    stroke-dasharray: 1750.49;
+    stroke-dashoffset: 1750.49;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+
+}
+#path-3{
+    stroke-dasharray: 1539.68;
+    stroke-dashoffset: 1539.68;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+}
+#path-4{
+    stroke-dasharray: 4059.05;
+    stroke-dashoffset: 4059.05;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+}
+@-webkit-keyframes gonow{
+
+    to{
+        stroke-dashoffset:0px;
+        stroke: black;
+        stroke-width: 20px;
+    }
+}
+@-moz-keyframes gonow{
+
+    to{
+        stroke-dashoffset:0px;
+        stroke: black;
+        stroke-width: 20px;
+    }
+}
+@keyframes gonow{
+
+    to{
+        stroke-dashoffset:0px;
+        stroke: black;
+        stroke-width: 20px;
+    }
+}

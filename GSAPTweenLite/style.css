@@ -1,0 +1,38 @@
+.tween1{
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    background-color: chocolate;
+}
+
+.tween , .tweenx , .tweeny , .tween-delay ,.tween-from-delay-1 ,.tween-from-delay-2
+,.duration,.eventCallback,.invalidate,.isactive , .default, .kill ,.pause-1 , .reverse-box ,.box-seek ,.box-resume 
+,.set-box ,.start-time ,.time-box-c,.time-scale-box
+{
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+}
+.tween30,.tween2{ background-color: darkmagenta; }
+.tween40,.tween3{ background-color: firebrick;}
+.tween20,.tween4{ background-color: darksalmon;}
+.twennfrom1 {background-color: gold;}
+.tweenfromto {background-color: hotpink;}
+.tween-delay {background-color: black;}
+.tween-from-delay-1 {background-color: cyan}
+.tween-from-delay-2 {background-color: rgb(88, 240, 0)}
+.duration{background-color: dodgerblue}
+.eventCallback{background-color: indigo}
+.invalidate{background-color: lightcoral}
+.isactive {background-color: darkgreen}
+.default{background-color: red;}
+.kill{background-color: yellow}
+.pause-1{background-color: hotpink}
+.reverse-box {background-color: lightseagreen;}
+.box-seek {background-color: maroon}
+.box-resume {background-color: darkslateblue;}
+.set-box{background-color: teal;}
+.start-time{background-color: rgb(71, 235, 57)}
+.time-box-c{background-color: tomato}
+.time-scale-box{background-color: crimson}
+

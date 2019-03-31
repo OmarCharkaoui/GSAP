@@ -1,0 +1,49 @@
+
+
+
+.without-timeline , .timeline-1 ,.box-add-1, .box-add-2 , .box-add-3 , .dox-form-1,
+.dox-form-2,.dox-form-3
+{
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+}
+.without-timeline{background-color: chartreuse}
+.timeline-1{background-color: crimson}
+.box-add-1{background-color: tomato}
+.box-add-2{background-color: rgb(0, 0, 0)}
+.box-add-3{background-color: rgb(255, 0, 0)}
+.dox-form-1{background-color: chocolate}
+.dox-form-2{background-color: rgb(12, 12, 12)}
+.dox-form-3{background-color: rgb(248, 0, 0)}
+
+/* --------------------------------- SVG --------------------------- */
+
+.svg-1 path{
+    fill:transparent;
+    stroke: black;
+    stroke-width: 2px;
+
+}
+
+
+
+#Tobecontinued   {
+    fill: transparent;
+    stroke: black ;
+    stroke-width: .6px;
+}
+/* #Tobecontinued #path1  { }
+#Tobecontinued #path2  {fill: orange}
+#Tobecontinued #path3  {fill: orange}
+#Tobecontinued #path4  {fill: orange}
+#Tobecontinued #path5  {fill: orange}
+#Tobecontinued #path6  {fill: orange}
+#Tobecontinued #path7  {fill: orange}
+#Tobecontinued #path8  {fill: orange}
+#Tobecontinued #path9  {fill: orange}
+#Tobecontinued #path10 {fill: orange}
+#Tobecontinued #path11 {fill: orange}
+#Tobecontinued #path12 {fill: orange}
+#Tobecontinued #path13 {fill: orange}
+ */

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn TweenMax </title>
+  <!--   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+  
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1 class="Display-1 text-black w-70 text-center"> TweenMax</h1>
+  <h3 class="text-center"><span class="text-danger">TweenMax</span> extends<span class="text-warning">TweenLite</span>, adding many useful features</h3>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+ <div class="h2 text-danger">TweenMax.globalTimeScale()</div>
+ <button class="btn btn-success btn-play-global mb-1"> Play animation </button>
+ <button class="btn btn-warning btn-curent-global mb-1"> Change the TimeScale x3 For all animation </button>
+ <div class="box-1"></div>
+ <div class="box-2"></div>
+ <div class="box-3"></div>
+ <button class="btn btn-danger btn-twenning">TweenMax.isTweening(['.box-1' , '.box-2' , '.box-3'])) ? </button> <p> If a tween is paused, is completed, or hasn't started yet, it isn't considered active. </p>
+ <p class="resolta h3"></p>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+<hr class="border border-warning">
+<div class="container">
+  <span class="h6">Refresh to repeat</span> <div class="h2 text-danger">TweenMax.killAll()</div> 
+  <button class="btn btn-success btn-killAll mb-1"> Play animation </button>
+  <button class="btn btn-danger btn-killTweens mb-1"> Kill All Tweens(animation + DelayCall)  </button>
+  <button class="btn btn-warning btn-killTweens-Delay mb-1"> kill animation without DelayCall </button>
+  <div class="box-killall"></div>
+  <h3 class="titi" > Clik Play animation then Wait 3s and you see message </h3>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <div class="h2 text-danger">TweenMax.killDelayedCallsTo()</div>
+  <button class="btn btn-success btn-kill-DelayedCallsTo mb-1"> Click and wait 3s to see text below </button>
+  <button class="btn btn-warning btn-kill-function-2 mb-1"> Click to kill function 2 </button>
+  <button class="btn btn-secondary btn-kill-function-3 mb-1"> Click to kill function 3 </button>
+    <div class="function-1"> </div>
+    <div class="function-2"> </div>
+    <div class="function-3"> </div>
+    <div class="bloking border border-black mt-1">
+    <p> First : Click green btn and wait 3s  </p>
+    <P> Second : refrech page</P>
+    <p> Third : Click green  btn then yellow btn to remove function 2 <br> 
+            or: Click green btn then grey btn to remove function 3
+    </p>
+  </div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <div class="h2 text-danger">.repeat()</div>
+  <button class="btn btn-warning btn-play mb-1"> Play Animation </button>
+  <button class="btn btn-warning btn-repeat mb-1"> Repeat animation 3 Time </button>
+  <div class="repeat"></div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <div class="h2 text-danger">TweenMax.staggerFrom()</div>
+  <button class="btn btn-primary btn-staggerFrom mb-1"> Play Animation (0.2s different each box ) </button>
+  <button class="btn btn-warning btn-staggerFrom-1 mb-1"> Play Animation (1s different each box ) </button>
+  <div class="box-stagger-1"></div>
+  <div class="box-stagger-2"></div>
+  <div class="box-stagger-3"></div>
+
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <div class="h2 text-danger">TweenMax.staggerTo()</div>
+    <button class="btn btn-primary btn-staggerFromTo mb-1"> Play Animation</button>
+  <div class="box-str ">
+    <div class="box-strag-1"></div>
+    <div class="box-strag-2"></div>
+    <div class="box-strag-3"></div>
+    <div class="box-strag-4"></div>
+    <div class="box-strag-5"></div>
+    <div class="box-strag-6"></div>
+    <div class="box-strag-7"></div>
+    <div class="box-strag-8"></div>
+    <div class="box-strag-9"></div>
+    <div class="box-strag-10"></div>
+    <div class="box-strag-11"></div>
+    <div class="box-strag-12"></div>
+    <div class="box-strag-13"></div>
+    <div class="box-strag-14"></div>
+    <div class="box-strag-15"></div>
+    <div class="box-strag-16"></div>
+    <div class="box-strag-17"></div>
+    <div class="box-strag-18"></div>
+    <div class="box-strag-19"></div>
+    <div class="box-strag-20"></div>
+    <div class="box-strag-1"></div>
+    <div class="box-strag-2"></div>
+    <div class="box-strag-3"></div>
+    <div class="box-strag-4"></div>
+    <div class="box-strag-5"></div>
+    <div class="box-strag-6"></div>
+    <div class="box-strag-7"></div>
+    <div class="box-strag-8"></div>
+    <div class="box-strag-9"></div>
+    <div class="box-strag-10"></div>
+    <div class="box-strag-11"></div>
+    <div class="box-strag-12"></div>
+    <div class="box-strag-13"></div>
+    <div class="box-strag-14"></div>
+    <div class="box-strag-15"></div>
+    <div class="box-strag-16"></div>
+    <div class="box-strag-17"></div>
+    <div class="box-strag-18"></div>
+    <div class="box-strag-19"></div>
+    <div class="box-strag-20"></div>
+    <div class="box-strag-1"></div>
+    <div class="box-strag-2"></div>
+    <div class="box-strag-3"></div>
+    <div class="box-strag-4"></div>
+    <div class="box-strag-5"></div>
+    <div class="box-strag-6"></div>
+    <div class="box-strag-7"></div>
+    <div class="box-strag-8"></div>
+    <div class="box-strag-9"></div>
+    <div class="box-strag-10"></div>
+    <div class="box-strag-11"></div>
+    <div class="box-strag-12"></div>
+    <div class="box-strag-13"></div>
+    <div class="box-strag-14"></div>
+    <div class="box-strag-15"></div>
+    <div class="box-strag-16"></div>
+    <div class="box-strag-17"></div>
+    <div class="box-strag-18"></div>
+    <div class="box-strag-19"></div>
+    <div class="box-strag-20"></div>
+    <div class="box-strag-1"></div>
+    <div class="box-strag-2"></div>
+    <div class="box-strag-3"></div>
+    <div class="box-strag-4"></div>
+    <div class="box-strag-5"></div>
+    <div class="box-strag-6"></div>
+    <div class="box-strag-7"></div>
+    <div class="box-strag-8"></div>
+    <div class="box-strag-9"></div>
+    <div class="box-strag-10"></div>
+    <div class="box-strag-11"></div>
+    <div class="box-strag-12"></div>
+    <div class="box-strag-13"></div>
+    <div class="box-strag-14"></div>
+    <div class="box-strag-15"></div>
+    <div class="box-strag-16"></div>
+    <div class="box-strag-17"></div>
+    <div class="box-strag-18"></div>
+    <div class="box-strag-19"></div>
+    <div class="box-strag-20"></div>
+
+  </div>
+</div>
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+<div class="container">
+  <div class="h2 text-danger">.updateTo()</div>
+  <button class="btn btn-primary btn-play mb-1"> Play </button>
+  <button class="btn btn-primary btn-updateTo mb-1"> Update To ({rotation:360 ,y:50 })</button>
+  <div class="box-update"></div>
+  <p> first : Click play to see default animation  </p>
+  <p> Second : Refresh Page  </p>
+  <p> Third : Click update then click  play  </p>
+</div>
+
+<hr class="border border-warning">
+<!-- ------------------------------------------------------------------------------ -->
+
+<div class="container">
+  <div class="h2 text-danger">.yoyo()</div>
+  <button class="btn btn-primary btn-play-animation-normal mb-1"> Play animation </button>
+  <button class="btn btn-warning btn-repeat mb-1"> Repeat animation </button>
+  <button class="btn btn-success btn-play-yoyo mb-1"> Repeat animation + yoyo() </button>
+  <div class="box-yoyo-0"></div>
+  <p> first  :  Click play to see default animation</p>
+  <p> Second :  Click Repeat animation then click Play animation</p>
+  <p> Third  :  Click Repeat animation + yoyo() Then Play animation</p>
+</div>
+
+
+<script src="./jquery/jquery-3.3.1.min.js"></script>
+<script src="./bootsrap/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="my-js.js"></script>
+</body>
+</html>
